@@ -1,0 +1,16 @@
+diff --git a/src/efsw/FileWatcherWin32.cpp b/src/efsw/FileWatcherWin32.cpp
+index fee963e..6ff826d 100644
+--- a/src/efsw/FileWatcherWin32.cpp
++++ b/src/efsw/FileWatcherWin32.cpp
+@@ -156,11 +156,6 @@ void FileWatcherWin32::watch()
+ 
+ void FileWatcherWin32::run()
+ {
+-	if ( mHandles.empty() )
+-	{
+-		return;
+-	}
+-
+ 	do
+ 	{
+ 		if ( !mHandles.empty() )
